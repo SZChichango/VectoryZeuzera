@@ -1,0 +1,59 @@
+/** @format */
+
+.page-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-title button {
+  border: none;
+  background: none;
+  color: #fff;
+  background-color: #0041ff;
+  padding: 0 1em;
+}
+.main {
+  padding: 1em;
+}
+
+.filter {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.products-table {
+  margin-top: 2em;
+}
+
+table {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+th {
+  padding: 1em 0;
+  background-color: hsla(0, 0%, 63.5%, 0.2);
+}
+
+td {
+  padding: 1em 0;
+  border-bottom: 1px solid hsla(0, 0%, 63.5%, 0.2);
+}
+
+input[type="checkbox"] {
+  height: 24px;
+  width: 24px;
+}
+
+.action {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+a.delete {
+  text-decoration: none;
+  color: #0041ff;
+}

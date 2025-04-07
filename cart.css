@@ -1,0 +1,133 @@
+/** @format */
+
+.cart-header {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.items-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1em;
+  border-bottom: 1px solid;
+  margin-bottom: 1em;
+}
+
+.items-header p:nth-child(2) {
+  padding-left: 5em;
+}
+
+.item-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid;
+}
+
+.item-flex img {
+  width: fit-content;
+  margin-bottom: 0;
+}
+
+.item {
+  display: flex;
+  gap: 2em;
+}
+
+.item-quantity {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  height: fit-content;
+}
+
+.shopping-cart button {
+  margin-top: 2em;
+  font-size: 1em;
+}
+
+h2 span {
+  color: rgba(28, 29, 30, 0.5);
+}
+
+/* Cart page */
+.cart-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-color: gray;
+}
+
+table {
+  width: 100%;
+}
+
+table thead td {
+  color: #555555;
+}
+
+table thead td {
+  padding: 30px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+table tbody td {
+  padding: 20px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+table thead td:last-child {
+  text-align: right;
+}
+
+table tbody td:last-child {
+  text-align: right;
+}
+
+table .img {
+  width: 80px;
+}
+
+table a {
+  text-decoration: none;
+  color: #999999;
+}
+
+table .remove {
+  color: #7777;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+table .remove:hover {
+  text-decoration: underline;
+}
+
+table .price {
+  color: #999999;
+}
+
+table input[type="number"] {
+  width: 68px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  color: #555555;
+  border-radius: 5px;
+}
+
+.subtotal {
+  text-align: right;
+  padding: 10px 0;
+}
+
+.cart-wrapper .buttons {
+  text-align: right;
+}

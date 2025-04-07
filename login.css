@@ -1,0 +1,60 @@
+/** @format */
+
+.container-flex {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.container-flex h1 {
+  font-weight: 400;
+}
+
+.container-flex h2 {
+  font-weight: normal;
+  font-size: 1em;
+  letter-spacing: 3px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+form label {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.input-align {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  width: 400px;
+  padding: 0.5em;
+  border-radius: 0px;
+  text-align: left;
+}
+
+form p {
+  text-align: center;
+}
+
+/* Register */
+
+.input-align.inline {
+  justify-content: flex-start;
+}
+
+input[type="checkbox"] {
+  display: inline;
+}
+
+.gender-preference {
+  display: block;
+  float: left;
+}

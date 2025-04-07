@@ -1,0 +1,299 @@
+/** @format */
+.dashboard-flex {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.dashboard-header__flex {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 1em;
+  justify-content: center;
+}
+
+.pdetails-grid {
+  display: grid;
+  column-gap: 4em;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.pdetails-grid a {
+  text-decoration: none;
+}
+
+.pdetail {
+  margin-bottom: 2em;
+}
+
+.pdetail-header {
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 1px solid;
+}
+
+.orders-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.orders-flex h2 {
+  text-align: center;
+}
+
+.order-flex {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 2em;
+}
+
+.order-flex button {
+  margin-top: 1em;
+  border: none;
+  background: transparent;
+  padding: 1em 0;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.order-flex button:hover {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.order-details__grid {
+  display: none;
+}
+
+.order-details__grid.active {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 2em;
+  row-gap: 2em;
+}
+
+.addresses-flex {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.addresses-flex h2 {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.address-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.address-header {
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 1px solid;
+}
+
+.address-header a {
+  text-decoration: none;
+}
+
+.add-address {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-address h3 {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.add-address__form--input {
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-address__form input,
+select {
+  font-size: 1em;
+  border-radius: 0;
+  border: none;
+  border: 1px solid;
+  padding: 0.5em;
+}
+
+.add-address__form button {
+  background: none;
+  padding: 1em;
+  border: none;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.add-address__form--input.checkbox {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+@media (min-width: 870px) {
+  .dashboard-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dashboard-header__flex {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 2em;
+    justify-content: center;
+  }
+
+  .pdetails-grid {
+    margin: 2em auto;
+    display: grid;
+    column-gap: 4em;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pdetail {
+    margin-bottom: 2em;
+  }
+
+  .pdetail-header {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    border-bottom: 1px solid;
+  }
+
+  .orders-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+
+    margin: 0 auto;
+    padding: 1em;
+  }
+  .orders-flex h2 {
+    text-align: center;
+  }
+
+  .order-flex {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 2em;
+  }
+
+  .order-flex button {
+    margin-top: 1em;
+    border: none;
+    background: transparent;
+    padding: 1em 0;
+    border: 1px solid;
+    cursor: pointer;
+  }
+
+  .order-flex button:hover {
+    background: var(--color-black);
+    color: var(--color-white);
+  }
+
+  .order-details__grid {
+    display: none;
+  }
+
+  .order-details__grid.active {
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2em;
+    row-gap: 2em;
+  }
+
+  .addresses-flex {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .addresses-flex h2 {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  .address-container {
+    display: flex;
+    gap: 2em;
+  }
+
+  .address-header {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    border-bottom: 1px solid;
+  }
+
+  .add-address {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+  }
+
+  .add-address h3 {
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+
+  .add-address__form--input {
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .add-address__form input,
+  select {
+    font-size: 1em;
+    border-radius: 0;
+    border: none;
+    border: 1px solid;
+    padding: 0.5em;
+  }
+
+  .add-address__form button {
+    background: none;
+    padding: 1em;
+    border: none;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+
+  button[type="submit"]:hover {
+    background: var(--color-black);
+    color: var(--color-white);
+  }
+
+  .add-address__form--input.checkbox {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+}

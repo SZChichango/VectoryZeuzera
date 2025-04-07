@@ -1,0 +1,31 @@
+<h2>Order history</h2>
+          <div class="order-flex">
+            <h3>Delivered Wed, 9 Nov 2022</h3>
+            <p>Signed by: <span>Stelio Zacarias Chichango</span></p>
+            <button>Details</button>
+            <div class="order-details__grid">
+              <div class="order-address">
+                <h3>Shipping Address</h3>
+                <p class="order-address">
+                  44 Alsatian Road, Glen Austin AH, Midrand, 1685
+                </p>
+              </div>
+              <div class="delivery-method">
+                <h3>Delivery Method</h3>
+                <p>Standard</p>
+              </div>
+              <div class="payment-method">
+                <h3>Payment Method</h3>
+                <p>Credit / Debit Card</p>
+              </div>
+              <div class="order-summary">
+                <h3>Order Summary</h3>
+                <p>
+                  <span class="item-count">2</span> Items
+                  <span class="items-total">R334</span>
+                </p>
+                <p>Delivery <span>R65</span></p>
+                <p>Order Total: <span class="order-total">R65</span></p>
+              </div>
+            </div>
+          </div>
