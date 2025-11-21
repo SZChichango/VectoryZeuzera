@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Iterate through the data
       for (let i = 0; i < response.length; i++) {
         html += `
-          <div class="item">
+          <div class="item" data-product-id="${response[i].product_id}">
             <img src="./VZ/${response[i].image}" alt="item" />
             <p>${response[i].product_name}</p>
             <p class="item-category">${response[i].category}</p>
@@ -32,19 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
       // Append the data to the DOM
       document.getElementsByClassName("items")[0].innerHTML = html;
-      document.addEventListener("click", function (event) {
-        // Check if the clicked element is an item
-        if (event.target.classList.contains("item")) {
-          // Get the index of the clicked item
-          let index = Array.from(event.target.parentNode.children).indexOf(
-            event.target
-          );
-
-          // Redirect to the product page with the item details
-          window.location.href = `product.php?product_id=${response[index].product_id}`;
-          console.log(response[i].product_id);
-        }
-      });
     }
   };
   xhr.send();
@@ -92,7 +79,7 @@ filterBtn.addEventListener("click", () => {
       // Iterate through the data
       for (let i = 0; i < response.length; i++) {
         html += `
-          <div class="item">
+          <div class="item" data-product-id="${response[i].product_id}">
             <img src="./VZ/${response[i].image}" alt="${response[i].product_name}" />
             <p>${response[i].product_name}</p>
             <p class="item-category">${response[i].category}</p>
@@ -105,17 +92,15 @@ filterBtn.addEventListener("click", () => {
     }
   };
   xhr.send(params);
-  // Move it outside the xhr.onreadystatechange callback
-  document.addEventListener("click", function (event) {
-    // Check if the clicked element is an item
-    if (event.target.closest(".item")) {
-      // Get the index of the clicked item
-      let index = Array.from(
-        event.target.closest(".item").parentNode.children
-      ).indexOf(event.target.closest(".item"));
+});
 
-      // Redirect to the product page with the item details
-      window.location.href = `product.php?product_id=${response[index].product_id}`;
+// Single delegated event listener for all item clicks
+document.addEventListener("click", function (event) {
+  const item = event.target.closest(".item");
+  if (item) {
+    const productId = item.getAttribute("data-product-id");
+    if (productId) {
+      window.location.href = `product.php?product_id=${productId}`;
     }
-  });
+  }
 });
